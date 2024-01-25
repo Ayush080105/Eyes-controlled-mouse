@@ -33,7 +33,7 @@ while True:
             #print(x,y)
             cv2.circle(image,(x,y),3,(0,255,255))
         if(left_eye[0].y-left_eye[1].y<0.01):
-            pyautogui.leftClick
+            pyautogui.Click()
             pyautogui.sleep(2)
             print('mouse clicked')
     cv2.imshow("Eye Controlled Mouse",image)
